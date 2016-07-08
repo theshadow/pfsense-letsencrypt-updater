@@ -1,11 +1,11 @@
-Pfsense Let's Encrypt Updater
+# Pfsense Let's Encrypt Updater
 
 This is a simple project based on this [post](https://thedevops.party/lets-encrypt-ssl-certificate-on-pfsense-2-3/). 
 The goal is to make it automatically update the pfsense configuration with the new certs as they expire. This requires
 two components. First is a method of generating valid SSL certificates. Second is the ability to update the [pfsense](https://www.pfsense.org/)
 configuration.
 
-To accomplish the first task we're going to use the (acme.sh)[https://acme.sh] tool to generate valid certificates.
+To accomplish the first task we're going to use the [acme.sh](https://acme.sh) tool to generate valid certificates.
 So install that and make sure it's working. For now, this tool doesn't do the initial installation of your certificate.
 You'll have to use the Certificate Manager outlined in the blog post. Once this is done you'll want to move on to the 
 next step.
